@@ -29,6 +29,7 @@ body {
   margin: auto 10rem;
   align-content: center;
   justify-content: center;
+  width: 120rem;
   margin: auto;
 }
 /*nav-container*/
@@ -51,13 +52,14 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1.3rem;
+
   margin: 0 0rem;
 }
 
 .nav__item a {
   text-decoration: none;
   font-size: 2rem;
+  margin: 0 2rem;
   color: white;
 }
 
@@ -65,6 +67,7 @@ body {
 
 .home__container {
   font-family: "Roboto", sans-serif;
+  
 }
 
 .title {
@@ -72,7 +75,7 @@ body {
   font-weight: 400;
   margin-bottom: 2rem;
 }
-.home__1 {
+.home__1.section__1 {
   display: flex;
   height: 100rem;
 }
@@ -180,8 +183,10 @@ body {
 /*section--3-home*/
 
 .home__3 {
+  position: relative;
   display: flex;
   height: 100rem;
+  
 }
 
 .home__3--container{
@@ -225,13 +230,115 @@ body {
   display:block
 }
 
+/*footer*/
+
+footer{
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+
 footer> span{
   font-family: 'Roboto';
   display:flex;
- 
- 
   font-size: 2rem;
   justify-content: center
   ;
 }
 
+/* home elements styling*/
+
+.circle{
+  position:absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top left, var(--linear-gradient-end), var(--linear-gradient-start));
+
+  z-index: -1;
+}
+/*circle top*/
+.circle--top{
+  width: 55rem;
+  height: 55rem;
+  left: -40rem;
+  top: -20rem;
+}
+
+
+.circle--top-1{
+  width: 30rem;
+  height: 30rem;
+  left: 0rem;
+  top: -10rem;
+  
+}
+/*circle btn*/
+
+.circle--btm{
+  width:55rem;
+  height: 55rem;
+  right: -30rem;
+  bottom: -5rem;
+}
+.circle--btm-1{
+  width: 30rem;
+  height: 30rem;
+  right: 20rem;
+  bottom: 10rem;
+  z-index: -2;
+}
+
+/*rectangle*/
+
+.rectangle{
+  position: absolute;
+  width: 44.3rem;
+  height: 32.7rem;
+  background-color: var(--rectangle-back);
+  opacity: .5;
+  border-radius: 25px;
+
+}
+
+.rectangle--top{
+  left: -20rem;
+
+}
+
+.rectangle--btm{
+  bottom: 0rem;
+  right: -20rem;
+}
+
+/*----------------------Projects---------------------*/
+.project__container{
+  font-family: 'Roboto',sans-serif;
+  
+}
+.project__1{
+  display: flex;
+  height: 100rem;
+  min-width: 120rem;
+  /*todo-section margin*/
+  margin: 30rem 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.project__1--bottom{
+  margin: 2rem;
+  display: flex;
+  font-size: 2rem;
+  text-align: left;
+  
+
+}
+
+.project__1--left{
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.project__1--left> p{
+  line-height: 3.5rem;
+}
