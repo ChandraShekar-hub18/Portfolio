@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,210 +23,256 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="main">
-      <nav class="nav__container">
-        <span class="logo">Chandu's Portfolio</span>
-        <ul class="nav__items">
-          <li class="nav__item nav__education"><a href="#">education</a></li>
-          <li class="nav__item nav__projects"><a href="#">projects</a></li>
-          <li class="nav__item nav__certificates">
-            <a href="#">certificates</a>
-          </li>
-          <li class="nav__item nav__contact"><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <!-- home -->
-        <div class="home__container ">
-          <!--section-1-->
-          <section class="section__1 home__1">
-            <div class="section__1--left home__1--left">
-              <div class="section__1--left--container">
-                <div class="home__1--left-content">
-                  <h1 class="title">CHANDRA SHEKAR</h1>
-                  <p class="title-content">
-                    A passionate individual who always thrives to work onend to
-                    end products which develop sustainable and scalable, Social
-                    and Technical systems to create impact
-                  </p>
+    <div class="main-body">
+      <div class="main">
+        <nav class="nav__container">
+          <span class="logo">Chandu's Portfolio</span>
+          <ul class="nav__items">
+            <li class="nav__item nav__education"><a href="#">education</a></li>
+            <li class="nav__item nav__projects"><a href="#">projects</a></li>
+            <li class="nav__item nav__certificates">
+              <a href="#">certificates</a>
+            </li>
+            <li class="nav__item nav__contact"><a href="#">contact</a></li>
+            <i class="ri-menu-3-line"></i>
+          </ul>
+        </nav>
+        <div class="container">
+          <!-- home -->
+          <div class="home__container hidden">
+            <!--section-1-->
+            <section class="section__1 home__1">
+              <div class="home__1--container">
+                <div class="home__1--left--container">
+                  <div class="home__1--left-content">
+                    <h1 class="title">CHANDRA SHEKAR</h1>
+                    <p class="title-content">
+                      A passionate individual who always thrives to work onend
+                      to end products which develop sustainable and scalable,
+                      Social and Technical systems to create impact
+                    </p>
+                  </div>
                 </div>
-                <div class="home__1--left-socialIcons">
-                  <ul class="icons">
-                    <li class="icon">
-                      <a href="#"
-                        ><img src="resources/icons/instagram.png" alt=""
-                      /></a>
-                    </li>
-                    <li class="icon">
-                      <a href="#"
-                        ><img src="resources/icons/linkedin.png" alt=""
-                      /></a>
-                    </li>
-                    <li class="icon">
-                      <a href="#"
-                        ><img src="resources/icons/twitter.png" alt=""
-                      /></a>
-                    </li>
-                    <li class="icon">
-                      <a href="#"
-                        ><img src="resources/icons/facebook.png" alt=""
-                      /></a>
-                    </li>
-                    <li class="icon">
-                      <a href="#"
-                        ><img src="resources/icons/github-logo.png" alt=""
-                      /></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="section__1--right home__1--right">
-              <img src="resources/img/hacker-mind.png" alt="hacker-mind" />
-            </div>
-          </section>
 
-          <!-- section-2 -->
-          <section class="section__2 home__2">
-            <div class="circle circle--top"></div>
-            <div class="circle circle--top-1"></div>
-            <div
-              class="section__2--container home__section--container home__2--container"
-            >
-              <h1 class="sections--title">WHAT I DO ?</h1>
-              <div class="section__2--content home__2--content">
-                <div class="section__2--left home__2--left">
+                <div class="home__1--right">
                   <img
-                    src="resources/img/programming-img.png"
-                    alt="what-I-do"
+                    class="hacker-img"
+                    src="resources/img/hacker-mind.png"
+                    alt="hacker-mind"
                   />
                 </div>
-                <div class="section__2--right home__2--right">
-                  <!--todo add icons-->
-                  <ul class="skills__icons">
-                    <li class="skills__icon">
-                      <img src="resources/icons/html-1.png" alt="html" />
+                <div class="home__1--left-socialIcons">
+                  <ul class="social__icons icons">
+                    <li class="social__icon icon">
+                      <a href="#"
+                        ><img
+                          src="resources/icons/instagram.png"
+                          alt="instagram"
+                      /></a>
                     </li>
-                    <li class="skills__icon">
-                      <img src="resources/icons/css-3.png" alt="" />
+                    <li class="social__icon icon">
+                      <a href="#"
+                        ><img src="resources/icons/linkedin.png" alt="linkedin"
+                      /></a>
                     </li>
-                    <li class="skills__icon">
-                      <img src="resources/icons/logo-javascript.png" alt="" />
+                    <li class="social__icon icon">
+                      <a href="#"
+                        ><img src="resources/icons/twitter.png" alt="twitter"
+                      /></a>
                     </li>
-                    <li class="skills__icon">
-                      <img src="resources/icons/mongodb-icon-1.png" alt="" />
+                    <li class="social__icon icon">
+                      <a href="#"
+                        ><img src="resources/icons/facebook.png" alt="facebook"
+                      /></a>
                     </li>
-                    <li class="skills__icon">
-                      <img src="resources/icons/java-4.png" alt="" />
+                    <li class="social__icon icon">
+                      <a href="#"
+                        ><img
+                          src="resources/icons/github-logo.png"
+                          alt="github"
+                      /></a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="circle circle--btm"></div>
-            <div class="circle circle--btm-1"></div>
-          </section>
+            </section>
 
-          <!--section-3-->
-          <section class="section__3 home__3">
-            <div class="rectangle rectangle--top"></div>
-            <div
-              class="section__3--container home__section--container home__3--container"
-            >
-              <h1 class="sections--title">Projects</h1>
-              <div class="section__3--content home__3--content">
-                <div class="section__3--left home__3--left">
-                  <ul class="project__icons">
-                    <li class="project--icon">
-                      <img src="resources/icons/chat-app.png" alt="" />
-                      <p>chat application</p>
-                    </li>
-                    <li class="project--icon"></li>
-                    <li class="project--icon"></li>
-                  </ul>
-                </div>
-                <div class="section__3--right home__3--right">
-                  <img src="resources/img/tasks.png" alt="" />
+            <!-- section-2 -->
+            <section class="section__2 home__2">
+              <div class="circle circle--top"></div>
+              <div class="circle circle--top-1"></div>
+              <div
+                class="section__2--container home__section--container home__2--container"
+              >
+                <h1 class="sections--title">WHAT I DO ?</h1>
+                <div class="section__2--content home__2--content">
+                  <div class="section__2--left home__2--left">
+                    <img
+                      src="resources/img/programming-img.png"
+                      alt="what-I-do"
+                    />
+                  </div>
+                  <div class="section__2--right home__2--right">
+                    <!--todo add icons-->
+                    <ul class="skills__icons">
+                      <li class="skills__icon icon">
+                        <img src="resources/icons/html-1.png" alt="html" />
+                      </li>
+                      <li class="skills__icon icon">
+                        <img src="resources/icons/css-3.png" alt="" />
+                      </li>
+                      <li class="skills__icon icon">
+                        <img src="resources/icons/logo-javascript.png" alt="" />
+                      </li>
+                      <li class="skills__icon icon">
+                        <img src="resources/icons/mongodb-icon-1.png" alt="" />
+                      </li>
+                      <li class="skills__icon icon">
+                        <img src="resources/icons/java-4.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="rectangle rectangle--btm"></div>
-          </section>
-        </div>
+              <div class="circle circle--btm"></div>
+              <div class="circle circle--btm-1"></div>
+            </section>
 
-        <!--projects-->
-        <div class="project__container ">
-          <section class="section__1 project__1">
-            <div class="section__1--container project__1--container">
-              <div class="project__1--top">
+            <!--section-3-->
+            <section class="section__3 home__3">
+              <div class="rectangle rectangle--top"></div>
+              <div
+                class="section__3--container home__section--container home__3--container"
+              >
+                <h1 class="sections--title">Projects</h1>
+                <div class="section__3--content home__3--content">
+                  <div class="section__3--left home__3--left">
+                    <ul class="project__icons">
+                      <li class="project--icon">
+                        <img src="resources/icons/chat-app.png" alt="" />
+                        <p>chat application</p>
+                      </li>
+                      <li class="project--icon"></li>
+                      <li class="project--icon"></li>
+                    </ul>
+                  </div>
+                  <div class="section__3--right home__3--right">
+                    <img src="resources/img/tasks.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="rectangle rectangle--btm"></div>
+            </section>
+          </div>
+
+          <!--projects-->
+          <div class="project__container hidden">
+            <section class="section__1 project__1">
+              <div class="section__1--container project__1--container">
                 <h1 class="title">Projects</h1>
-              </div>
-              <div class="project__1--bottom">
-                <div class="project__1--left">
-                  <p>My projects makes use of vast variety of latest technology tools My best experience is to create Data Science projects and deploy them to web application using cloud infrastructure</p>
-                </div>
-                <div class="project__1--right">
-                  <!--todo image-->
-                  <img src="resources/img/project-img.png" alt="">
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="section__2 project__2">
-            <!--todo using javascript generate template-->
-            <div class="project--item">
-              <div class="project--content">
-                <h1></h1>
-                <br />
-                <span></span>
-              </div>
-              <div class="project--icon">
-                <!--todo icons to be added using javascript-->
-              </div>
-            </div>
-          </section>
-        </div>
 
-        <!--certificates-->
-        <div class="certificates__container hidden">
-          <section class="section__1 certificates__1">
-            <div class="certificates__1--container">
-              <div class="certificates__1--top">
+                <div class="project__1--bottom">
+                  <div class="project__1--left">
+                    <p>
+                      My projects makes use of vast variety of latest technology
+                      tools My best experience is to create Data Science
+                      projects and deploy them to web application using cloud
+                      infrastructure
+                    </p>
+                  </div>
+                  <div class="project__1--right">
+                    <!--todo image-->
+                    <img src="resources/img/project-img.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section__2 project__2">
+              <!--todo using javascript generate template-->
+              <div class="project--item">
+                <div class="project--icon">
+                  <!--todo icons to be added using javascript-->
+                </div>
+                <div class="project--content">
+                  <h1>Chat application</h1>
+                  <br />
+                  <span>this application is build using </span>
+                </div>
+              </div>
+
+              <div class="project--item">
+                <div class="project--icon">
+                  <!--todo icons to be added using javascript-->
+                </div>
+                <div class="project--content">
+                  <h1>Chat application</h1>
+                  <br />
+                  <span>this application is build using </span>
+                </div>
+              </div>
+              <div class="project--item">
+                <div class="project--icon">
+                  <!--todo icons to be added using javascript-->
+                </div>
+                <div class="project--content">
+                  <h1>Chat application</h1>
+                  <br />
+                  <span>this application is build using </span>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--certificates-->
+          <div class="certificates__container hidden">
+            <section class="section__1 certificates__1">
+              <div class="certificates__1--container">
                 <h1 class="title">CERTIFICATIONS</h1>
-              </div>
-              <div class="certificates__1--bottom">
-                <!--todo image to be added-->
-              </div>
-            </div>
-          </section>
-          <section class="section__2 certificates__2">
-            <div class="section__2--container certificates__2--container">
-              <!--todo using javascript elements renders-->
-            </div>
-          </section>
-        </div>
 
-        <!--educations-->
-        <div class="education__container hidden">
-          <section class="section__1 education__1">
-            <div class="education__1--container">
-              <div class="education__1--left"></div>
-              <div class="education__1--right">
-                <h1 class="title">EDUCATION</h1>
+                <div class="certificates__1--bottom">
+                  <!--todo image to be added-->
+                  <img src="resources/img/certificate-img.png" alt="" />
+                </div>
               </div>
-            </div>
-          </section>
-          <section class="section__2 education__2">
-            <div class="education__2--container">
-              <h1 class="title">Degree Received</h1>
-              <div class="education__2 content">
-                <!--todo using javascript-->
+            </section>
+            <section class="section__2 certificates__2">
+              <div class="section__2--container certificates__2--container">
+                <!--todo using javascript elements renders-->
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
+
+          <!--educations-->
+          <div class="education__container ">
+            <section class="section__1 education__1">
+              <div class="education__1--container">
+                <div class="education__1--left">
+                  <img src="resources/img/education.svg" alt="">
+                </div>
+                <div class="education__1--right">
+                  <h1 class="education__title">EDUCATION</h1>
+                </div>
+              </div>
+            </section>
+            <section class="section__2 education__2">
+              <h1 class="education__2--title">Degree Received</h1>
+              <div class="education__2--container">
+                
+                <div class="education__2 content">
+                  <!--todo using javascript-->
+                </div>
+                <div class="education__2 content">
+                  <!--todo using javascript-->
+                </div>
+                <div class="education__2 content">
+                  <!--todo using javascript-->
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
+        <footer><span>Copyright©2024. Made with ❤ by chandu</span></footer>
       </div>
-      <footer><span>Copyright©2024. Made with ❤ by chandu</span></footer>
     </div>
   </body>
 </html>
